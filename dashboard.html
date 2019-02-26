@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="getCurrentEmployer.js"></script>
+  <script src="ApiCall.js"></script>
+  <script src="logout.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+  <!-- Jquery Themes -->
+  <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Styles -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <style type="text/css">
+    #content {
+      max-width: 600px;
+    }
+    #container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100vh;
+border: 1px solid red;
+}
+  
+  </style>
+</head>
+</head>
+
+<body>
+ 
+    <center id="container">
+  
+    <div class="spinner-border m-5" role="status" id="spinnerPage">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </center>
+  <div id="hiddenHtml" >
+    Javascript GET Request Test
+    <br><br>
+    <div id="content" class="container">
+      <table class="table table-bordered table_responsive">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">ID</th>
+            <th scope="col">FirstName</th>
+            <th scope="col">LastName</th>
+            <th scope="col">Gender</th>
+            <th scope="col">PhoneNumber</th>
+            <th scope="col">Email</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">data</th>
+            <td id="ID"></td>
+            <td id="FirstName"></td>
+            <td id="LastName">
+            <td id="Gender">
+            <td id="PhoneNumber">
+            <td id="Email">
+
+          </tr>
+        </tbody>
+      </table>
+      <!--<button type="button" id="buttonlogin" class="btn btn-primary" onclick="getCurrentEmployer(this)">Submit</button>-->
+      <button type="button" id="buttonlogout" class="btn btn-primary" onclick="logout(this)">Log out</button>
+
+      
+</div>
+
+  </center>
+</body>
+
+</html>

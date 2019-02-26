@@ -1,0 +1,7 @@
+                $("#button #loading").remove();
+ var ID = document.getElementById("ID");
+    var FirstName = document.getElementById("FirstName");
+    var LastName = document.getElementById("LastName");
+    var Gender = document.getElementById("Gender");
+    var PhoneNumber = document.getElementById("PhoneNumber");
+    var Email = document.getElementById("Email");
