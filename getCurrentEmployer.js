@@ -8,7 +8,7 @@ $( document ).ready(function() {
     }
     //alert("im here");
    // $( "#spinnerPage" ).show();
-   // $( "#hiddenHtml" ).hide();
+    //$( "#hiddenHtml" ).hide();
 
     getCurrentEmployer();
 });
@@ -41,17 +41,16 @@ function getCurrentEmployer() {
             $("#PhoneNumber").html(data.PhoneNumber);
             $("#Email").html(data.Email);
             console.log(data.Id);
+            $("#hiddenHtml").css("display","block");
             $("#spinnerPage").replaceWith( $(("#hiddenHtml")));
            //$( "#spinnerPage" ).hide();
             //$( "#spinnerPage" ).css("display", "none");
             $( "#hiddenHtml" ).show();
 
-
-
-
         } else {
             console.log("undefined")
         }
-
     }
+    
+
 }
